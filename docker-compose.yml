@@ -1,0 +1,22 @@
+db:
+  image: postgres:latest
+  ports:
+    - "5601:5432"
+  environment:
+    - POSTGRES_PASSWORD=$name$
+    - POSTGRES_USER=$name$
+  volumes_from:
+    - data
+
+testdb:
+  image: postgres:latest
+  ports:
+    - "5701:5432"
+  environment:
+    - POSTGRES_PASSWORD=$name$
+    - POSTGRES_USER=$name$
+
+data:
+  image: postgres:latest
+  command: /bin/sh
+
