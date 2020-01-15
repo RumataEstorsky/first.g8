@@ -21,14 +21,14 @@ val logging = Seq(
 val slickVersion = "3.3.2"
 val slickPgVersion = "0.18.1"
 val db = Seq(
-    "org.flywaydb"                % "flyway-core"                 % "6.1.1",
+    "org.flywaydb"                % "flyway-core"                 % "6.1.4",
     "org.postgresql"              % "postgresql"                  % "42.2.9",
     "com.typesafe.slick"          %% "slick"                      % slickVersion,
     "com.typesafe.slick"          %% "slick-hikaricp"             % slickVersion,
     "com.github.tminglei"         %% "slick-pg"                   % slickPgVersion,
 )
 
-val specs2Version = "4.8.1"
+val specs2Version = "4.8.3"
 val specs2= Seq(
     "org.specs2" %% "specs2-core" % specs2Version % "test"
 )
