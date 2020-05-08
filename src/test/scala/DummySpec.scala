@@ -1,8 +1,8 @@
 import org.specs2.mutable.Specification
 
-class FirstSpec extends Specification {
+class DummySpec extends Specification {
 
-  "Specification" should {
+  "Dummy" should {
 
     "be sure that 1 + 1 == 2" in {
       (1 + 1) must_== 2
