@@ -8,7 +8,7 @@ val circe = Seq(
     "io.circe" %% "circe-parser"
 ).map(_ % circeVersion)
 
-val akkaVersion = "2.6.8"
+val akkaVersion = "2.6.10"
 val akka = Seq(
     "com.typesafe.akka" %% "akka-stream" % akkaVersion
 )
@@ -18,17 +18,17 @@ val logging = Seq(
     "ch.qos.logback" % "logback-classic" % "1.2.3"
 )
 
-val slickVersion = "3.3.2"
-val slickPgVersion = "0.19.1"
+val slickVersion = "3.3.3"
+val slickPgVersion = "0.19.4"
 val db = Seq(
-    "org.flywaydb"                % "flyway-core"                 % "6.5.3",
-    "org.postgresql"              % "postgresql"                  % "42.2.14",
+    "org.flywaydb"                % "flyway-core"                 % "7.2.0",
+    "org.postgresql"              % "postgresql"                  % "42.2.18",
     "com.typesafe.slick"          %% "slick"                      % slickVersion,
     "com.typesafe.slick"          %% "slick-hikaricp"             % slickVersion,
     "com.github.tminglei"         %% "slick-pg"                   % slickPgVersion,
 )
 
-val specs2Version = "4.10.1"
+val specs2Version = "4.10.5"
 val specs2= Seq(
     "org.specs2" %% "specs2-core" % specs2Version % "test"
 )
